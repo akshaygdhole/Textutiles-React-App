@@ -1,6 +1,6 @@
 import propTypes from "prop-types";
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
@@ -8,12 +8,12 @@ export default function Navbar(props) {
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
       <div className="container-fluid">
-        {/* <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/">
           {props.title}
-        </Link> */}
-        <a className="navbar-brand" href="#">
+        </Link>
+        {/* <a className="navbar-brand" href="#">
           {props.title}
-        </a>
+        </a> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -28,16 +28,13 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              {/* <Link to="/" className="nav-link active" aria-current="page" >Home</Link> */}
-              <a href="/" className="nav-link active" aria-current="page" >Home</a>
+              <Link to="/" className="nav-link active" aria-current="page" >Home</Link>
+              {/* <a href="#" className="nav-link active" aria-current="page" >Home</a> */}
             </li>
             <li className="nav-item">
-              {/* <Link to="/About" className="nav-link" >
+              <Link to="/About" className="nav-link" >
                 {props.aboutText}
-              </Link> */}
-              {/* <a href="/About" className="nav-link" >
-                {props.aboutText}
-              </a> */}
+              </Link>
             </li>
           </ul>
           {/* <form className="d-flex">
