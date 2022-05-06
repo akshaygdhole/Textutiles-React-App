@@ -76,15 +76,3 @@ function App() {
   );
 }
 export default App;
-//  <Routes>
-//             <Route exact path="/About" element={<About />}></Route>
-//             <Route
-//               exact
-//               path="/"
-//               element={
-//                 <TextForm heading="Enter text" mode={mode} />
-//               }
-//             ></Route>
-//           </Routes>
-//         </div>
-//       </Router>

@@ -1,5 +1,3 @@
-// import React, { useState } from "react";
-
 export default function Alert(props) {
   const capitalize = (word) => {
     const lower = word.toLowerCase();
